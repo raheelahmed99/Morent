@@ -1,0 +1,339 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary : #fff;
+    --secodary :#1A202C;
+    --blue : #3563E9;
+    --gray-text : #90A3BF;
+    --black-text :  #1A202C;
+
+
+
+
+}
+body{
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secodary);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+.left_side{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo h3{
+    color: var(--blue);
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+     width: 492px;
+    height: 44px;
+   border: 1px solid #C3D4E966;
+    border-radius: 70px;
+    padding-left: 20px;
+}
+input[type=text]{
+    width: 90%;
+    height: 5vh;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    
+} 
+.nav_bar{
+    display: flex;
+    align-items: center;
+    width: 17%;
+    justify-content: space-between;
+}
+.nav_links:not(:last-child){
+    border: 1px solid #C3D4E966;
+    border-radius: 100px;
+    padding : 10px 12px ; 
+    position: relative;
+}
+.nav_links i{
+     color: #596780;
+}
+.notification_dot{
+    width: 11px;
+    height: 11px;
+    background-color: #FF4423;
+    position: absolute;
+    border-radius: 30px;
+    top: 2%;
+    right: 5%;
+}
+main{
+    background-color: aliceblue;
+    padding: 30px 40px 10px;
+}
+main section{
+    margin-bottom: 30px;
+}
+.car_ads{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad_background{
+        clip-path: ellipse(20rem 80% at bottom center);
+        background-color: #596780;
+        position: absolute;
+        z-index: 1;
+}
+.ad_content{
+    width: 48%;
+    height: 360px;
+    background-color: aqua;    
+    border-radius: 10px;
+    position: relative;
+   
+}
+.describtion{
+    position: relative;
+    width: 40%;
+    margin: 30px 0 0 30px;
+}
+.describtion h2, .describtion p{
+    margin-bottom: 20px;
+    
+
+}
+.describtion h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.describtion p{
+    line-height: 24px;
+}
+.btn{
+    padding: 15px 25px;
+    background-color: var(--blue);
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+}
+
+
+ .ad_content img{
+    width: 406px;
+    height: 116px;
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
+    
+}
+.pick_drop_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.switch{
+    background-color: var(--blue);
+    width: 80px;
+    height: 60px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.pick_up, .drop_off{
+    width: 42%;
+    padding: 20px 0px;  
+    background-color: var(--primary);
+    border-radius: 10px;
+   
+}
+.input_selection{
+    font-weight: 600;
+    margin: 0 0 10px 40px;
+}
+.shedule{
+   display: flex;
+   margin-left: 10px;
+}
+.shedule > div:not(:last-child){    
+    border-right: 1px solid #C3D4E966;
+}
+.shedule select{
+   border: none;
+   margin-left: -5px;
+   color: var(--gray-text);
+   font-size: 12px
+}
+.location, .date,  .time{
+    height: 48px;
+    width:200px;
+    font-weight: 700;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;  
+    padding: 0px 30px;
+}
+.popular_car, .recommendation_car, .catalog_container1{
+      margin-bottom: 30px;
+}
+
+ .showMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+}
+.cars_no{
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.popular_car span, .cars_no , .recommendation_car span{  
+    color: var(--gray-text);
+}
+.popular_car a{
+    float: right;
+    text-decoration: none;
+}
+.catalog_container1, .catalog_container2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+
+}
+.catalog_box{
+    width: 23%;
+    height: 400px;
+    background-color: var(--primary); 
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.catalog_box .favourite{
+    float: right;
+}
+.catalog_box .favourite .fa-heart{
+    color: red;
+}
+.car_detail .car_categoury{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-text);
+}
+.catalog_box .car_image{
+    display: flex;
+    justify-content: center;
+}
+.catalog_box .car_image img{
+    width: 250px;
+    height: 100px;
+    margin: 70px 0px;
+}
+.catalog_box .car_Spesification{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--gray-text);
+    margin-bottom: 20px;
+}
+.catalog_box .car_Spesification .icon{
+    margin-right: 5px;
+}
+.catalog_box .price_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.car_detail .car_name, .price{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secodary);
+
+}
+.price_div span{
+    color: var(--gray-text);
+    font-size: 14px;
+}
+.price_div .rent_btn{
+    padding: 12px 20px ;
+    background-color: var(--blue);
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+}
+footer{
+    height: 55vh;
+    padding: 50px 40px 60px;
+}
+.upper-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.upper-footer .footer_describtion{
+    width: 300px;
+}
+.upper-footer .footer_describtion p{
+    margin-top: 20px;
+    color: var(--gray-text);
+    font-weight: 500;
+}
+.upper-footer .links{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.links h3{
+    font-size: 20px;
+}
+.upper-footer ul{
+    list-style-type: none;
+}
+.upper-footer li{
+    margin-top: 30px;
+}
+.upper-footer li  a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+footer hr{
+    margin: 30px 0;
+}
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.copy_right p, span a{
+    font-size: 16px;
+    font-weight: 600;
+}
+span a{
+    text-decoration: none;
+    color: var(--black-text);
+  
+}
+.privacy_terms span:not(:last-child){
+    margin-right: 50px;
+}

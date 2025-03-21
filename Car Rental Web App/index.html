@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="left_side">
+            <div class="logo">
+                <h3>MORENT</h3>
+            </div>
+            <div class="search_bar">
+                <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+                <input type="text" class="search" placeholder="Search something here">
+                <div class="container"> <i class="bi bi-sliders"></i></div>
+
+                <i class="bi bi-sliders2"></i>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <a href="#" class="nav_links">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="#" class="nav_links">
+                <div class="notification_dot"></div>
+                <i class="fa-solid fa-bell"></i>
+            </a>
+            <a href="#" class="nav_links">
+                <i class="fa-solid fa-gear"></i>
+            </a>
+            <a href="#" class="nav_links">
+                <img src="./Assets/Images/profile.png" alt="profile" srcset="" width="40" height="40">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- Card Ads-->
+        <section class="car_ads">
+            <div class="ad_content">
+                <div class="describtion">
+                    <h2>The Best Platform for Car Rental</h2>
+                    <p>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                    <button class="btn rent_car">Rental Car</button>
+                </div>
+                <img src="./Assets/Images/koenigsegg.png" width="406px" height="116px" alt="Car ad1" srcset="">
+
+            </div>
+
+            <div class="ad_content">
+                <div class="describtion">
+                    <h2>Easy way to rent a car at a low price</h2>
+                    <p>Providing cheap car rental services and safe and comfortable facilities.</p>
+                    <button class="btn rent_car">Rental Car</button>
+                </div>
+                <img src="./Assets/Images/nissan.png" alt="Car ad2" srcset="">
+            </div>
+        </section>
+
+        <!--Pick Up Drop Off section -->
+        <section class="pick_drop_sec">
+            <div class="pick_up">
+                <div class="input_selection">
+                    <input type="radio" name="pick_up" id="pick_up">
+                    <label>Pick - Up</label>
+                </div>
+                <div class="shedule">
+                    <div class="location">
+                        <label>Locations</label>
+                        <select name="location" id="location">
+                            <option for="location">Select your city</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label>Date</label>
+                        <select name="date" id="date">
+                            <option for="date">Select your date</option>
+                        </select>
+                    </div>
+                    <div class="time">
+                        <label>Time</label>
+                        <select name="time" id="time">
+                            <option for="time">Select your time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="switch">
+                <i class="fa-solid fa-lg fa-arrows-left-right"></i>
+            </div>
+            <div class="drop_off">
+                <div class="input_selection">
+                    <input type="radio" name="pick_up" id="pick_up">
+                    <label>Drop - Off</label>
+                </div>
+                <div class="shedule">
+                    <div class="location">
+                        <label>Locations</label>
+                        <select name="location" id="location">
+                            <option for="location">Select your city</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label>Date</label>
+                        <select name="date" id="date">
+                            <option for="date">Select your date</option>
+                        </select>
+                    </div>
+                    <div class="time">
+                        <label>Time</label>
+                        <select name="time" id="time">
+                            <option for="time">Select your time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section-->
+        <section class="Catalog">
+            <div class="popular_car">
+                <span style="margin-left: 20px;">Popular Car</span>
+                <span>
+                    <a style="margin-right: 20px;" href="#">View All</a>
+                </span>
+            </div>
+
+            <div class="catalog_container1"></div>
+
+            <div class="recommendation_car">
+                <span style="margin-left: 20px;">Recommendation Car</span>
+            </div>
+
+            <div class="catalog_container2"></div>
+            <div class="showMore">
+                <div class="showMore_btn">
+                    <button class="btn">Show More</button>
+                </div>
+                <div class="cars_no">
+                    <span class="cars_no">120</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--Footer -->
+
+    <footer>
+        <div class="upper-footer">
+            <div class="footer_describtion">
+                <div class="logo" >
+                    <h3 style="margin-left: unset;">MORENT</h3>
+                </div>
+                <p>Our vision is to provide convenience and help increase your sales business.</p>
+            </div>
+            <div class="links">
+                <div class="about">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#"> Featured</a></li>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Bussiness Relation</a></li>
+                    </ul>
+
+                </div>
+                <div class="community">
+                    <h3>community</h3>
+                    <ul>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#"> Featured</a></li>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Bussiness Relation</a></li>
+                    </ul>
+
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#"> Featured</a></li>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Bussiness Relation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="lower-footer">
+            <div class="copy_right">
+                <p>©2022 MORENT. All rights reserved</p>
+            </div>
+            <div class="privacy_terms">
+                <span><a href="#">Privacy & Policy</a></span>
+                <span><a href="#">Terms & Condition</a></span>
+            </div>
+        </div>
+    </footer>
+    <script src="Data/data.js"></script>
+    <script src="Scripts/index.js"></script>
+</body>
+
+</html>
